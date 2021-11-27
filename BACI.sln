@@ -1,0 +1,56 @@
+﻿//////////////////////////////////////////////////////////////////////////
+// Criacao...........: 02/2018
+// Sistema...........: Bateria de Avaliação Computadorizada para Idosos
+// Analistas.........: Marilene Esquiavoni & Denny Paulista Azevedo Filho
+// Desenvolvedores...: Marilene Esquiavoni & Denny Paulista Azevedo Filho
+// Copyright.........: Marilene Esquiavoni & Denny Paulista Azevedo Filho
+//////////////////////////////////////////////////////////////////////////
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BACI.Desk", "BACI.Desk\BACI.Desk.csproj", "{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BACI.Test", "BACI.Test\BACI.Test.csproj", "{242C90E2-226A-4210-9F7A-295D1F2701FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BACI.Model", "BACI.Model\BACI.Model.csproj", "{3E1B43CC-18A4-4A20-8BB5-A6C816F56F7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BACI.Lib", "BACI.Lib\BACI.Lib.csproj", "{EB95F514-DF5E-46D0-9990-0F181CA8AE01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BACI.Controller", "BACI.Controller\BACI.Controller.csproj", "{64D03B4A-2811-48FC-8307-83FCA3C0ED85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{242C90E2-226A-4210-9F7A-295D1F2701FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242C90E2-226A-4210-9F7A-295D1F2701FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242C90E2-226A-4210-9F7A-295D1F2701FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242C90E2-226A-4210-9F7A-295D1F2701FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E1B43CC-18A4-4A20-8BB5-A6C816F56F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E1B43CC-18A4-4A20-8BB5-A6C816F56F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E1B43CC-18A4-4A20-8BB5-A6C816F56F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E1B43CC-18A4-4A20-8BB5-A6C816F56F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB95F514-DF5E-46D0-9990-0F181CA8AE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB95F514-DF5E-46D0-9990-0F181CA8AE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB95F514-DF5E-46D0-9990-0F181CA8AE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB95F514-DF5E-46D0-9990-0F181CA8AE01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64D03B4A-2811-48FC-8307-83FCA3C0ED85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D03B4A-2811-48FC-8307-83FCA3C0ED85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D03B4A-2811-48FC-8307-83FCA3C0ED85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D03B4A-2811-48FC-8307-83FCA3C0ED85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {907B013E-F607-43CD-AE6C-775AE40F4580}
+	EndGlobalSection
+EndGlobal

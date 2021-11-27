@@ -1,0 +1,195 @@
+﻿<!--
+//////////////////////////////////////////////////////////////////////////
+// Criacao...........: 02/2018
+// Sistema...........: Bateria de Avaliação Computadorizada para Idosos
+// Analistas.........: Marilene Esquiavoni & Denny Paulista Azevedo Filho
+// Desenvolvedores...: Marilene Esquiavoni & Denny Paulista Azevedo Filho
+// Copyright.........: Marilene Esquiavoni & Denny Paulista Azevedo Filho
+//////////////////////////////////////////////////////////////////////////
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Relogio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Relogio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="films" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\films.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checklist1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checklist1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabelaFundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabelaFundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Piramide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Piramide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Punho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Punho.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checklist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checklist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chapeu 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chapeu 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anterior64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anterior64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Accept64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Accept64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ultimo64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ultimo64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desenho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desenho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logout1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logout1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\down32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FundoTela" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoTela.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chapeu 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chapeu 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skip-backward32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Skip-backward32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chapeu 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chapeu 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PalmaPunho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PalmaPunho.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Idosos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Idosos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desenho48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desenho48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Proximo64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proximo64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Estrela" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Estrela.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add164.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PalmaAcima" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PalmaAcima.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Casa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Casa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trash-can64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trash-can64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Primeiro64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Primeiro64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chapeu 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chapeu 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forward32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forward32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FiguraAbastrata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiguraAbastrata.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

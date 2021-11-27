@@ -1,0 +1,441 @@
+﻿<!--
+//////////////////////////////////////////////////////////////////////////
+// Criacao...........: 02/2018
+// Sistema...........: Bateria de Avaliação Computadorizada para Idosos
+// Analistas.........: Marilene Esquiavoni & Denny Paulista Azevedo Filho
+// Desenvolvedores...: Marilene Esquiavoni & Denny Paulista Azevedo Filho
+// Copyright.........: Marilene Esquiavoni & Denny Paulista Azevedo Filho
+//////////////////////////////////////////////////////////////////////////
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BACI.Desk</RootNamespace>
+    <AssemblyName>BACI.Desk</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BACILogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Syncfusion.Grid.Base, Version=15.4460.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=15.4460.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Base, Version=15.4460.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=15.4460.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Base, Version=15.4460.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=15.4460.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.108.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.108.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.108.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vlc.DotNet.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.2.2.1\lib\net45\Vlc.DotNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Core.Interops, Version=2.2.1.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.Interops.2.2.1\lib\net45\Vlc.DotNet.Core.Interops.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Forms, Version=2.2.1.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Forms.2.2.1\lib\net45\Vlc.DotNet.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Wpf, Version=2.2.1.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Wpf.2.2.1\lib\net45\Vlc.DotNet.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvalBaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalBaseView.Designer.cs">
+      <DependentUpon>AvalBaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvalConstru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalConstru.Designer.cs">
+      <DependentUpon>AvalConstru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvalControlView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalControlView.Designer.cs">
+      <DependentUpon>AvalControlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvalEncade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalEncade.Designer.cs">
+      <DependentUpon>AvalEncade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvalEvoca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalEvoca.Designer.cs">
+      <DependentUpon>AvalEvoca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvalFiguAgru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalFiguAgru.Designer.cs">
+      <DependentUpon>AvalFiguAgru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvalIdeomo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalIdeomo.Designer.cs">
+      <DependentUpon>AvalIdeomo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvalInferen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalInferen.Designer.cs">
+      <DependentUpon>AvalInferen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvalInibi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalInibi.Designer.cs">
+      <DependentUpon>AvalInibi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvalReflexiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalReflexiva.Designer.cs">
+      <DependentUpon>AvalReflexiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseView.Designer.cs">
+      <DependentUpon>BaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChapeuVermeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChapeuVermeView.Designer.cs">
+      <DependentUpon>ChapeuVermeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesCasaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesCasaView.Designer.cs">
+      <DependentUpon>DesCasaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesEstreView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesEstreView.Designer.cs">
+      <DependentUpon>DesEstreView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesFolhaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesFolhaView.Designer.cs">
+      <DependentUpon>DesFolhaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesReloView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesReloView.Designer.cs">
+      <DependentUpon>DesReloView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesTriView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesTriView.Designer.cs">
+      <DependentUpon>DesTriView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseCadasView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseCadasView.Designer.cs">
+      <DependentUpon>BaseCadasView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiguraAbstra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiguraAbstra.Designer.cs">
+      <DependentUpon>FiguraAbstra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdosoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdosoView.Designer.cs">
+      <DependentUpon>IdosoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfissionalView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfissionalView.Designer.cs">
+      <DependentUpon>ProfissionalView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vid01View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vid01View.Designer.cs">
+      <DependentUpon>Vid01View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VidaDiariaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VidaDiariaView.Designer.cs">
+      <DependentUpon>VidaDiariaView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AvalBaseView.resx">
+      <DependentUpon>AvalBaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvalConstru.resx">
+      <DependentUpon>AvalConstru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvalControlView.resx">
+      <DependentUpon>AvalControlView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvalEncade.resx">
+      <DependentUpon>AvalEncade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvalEvoca.resx">
+      <DependentUpon>AvalEvoca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvalFiguAgru.resx">
+      <DependentUpon>AvalFiguAgru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvalIdeomo.resx">
+      <DependentUpon>AvalIdeomo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvalInferen.resx">
+      <DependentUpon>AvalInferen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvalInibi.resx">
+      <DependentUpon>AvalInibi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvalReflexiva.resx">
+      <DependentUpon>AvalReflexiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseView.resx">
+      <DependentUpon>BaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChapeuVermeView.resx">
+      <DependentUpon>ChapeuVermeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesCasaView.resx">
+      <DependentUpon>DesCasaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesEstreView.resx">
+      <DependentUpon>DesEstreView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesFolhaView.resx">
+      <DependentUpon>DesFolhaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesReloView.resx">
+      <DependentUpon>DesReloView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesTriView.resx">
+      <DependentUpon>DesTriView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCadasView.resx">
+      <DependentUpon>BaseCadasView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiguraAbstra.resx">
+      <DependentUpon>FiguraAbstra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdosoView.resx">
+      <DependentUpon>IdosoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfissionalView.resx">
+      <DependentUpon>ProfissionalView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vid01View.resx">
+      <DependentUpon>Vid01View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VidaDiariaView.resx">
+      <DependentUpon>VidaDiariaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BACI.Controller\BACI.Controller.csproj">
+      <Project>{64d03b4a-2811-48fc-8307-83fca3c0ed85}</Project>
+      <Name>BACI.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BACI.Lib\BACI.Lib.csproj">
+      <Project>{eb95f514-df5e-46d0-9990-0f181ca8ae01}</Project>
+      <Name>BACI.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BACI.Model\BACI.Model.csproj">
+      <Project>{3e1b43cc-18a4-4a20-8bb5-a6c816f56f7d}</Project>
+      <Name>BACI.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BACILogo.ico" />
+    <Content Include="checklist.ico" />
+    <None Include="Resources\FiguraAbastrata.PNG" />
+    <None Include="Resources\Punho.PNG" />
+    <None Include="Resources\PalmaPunho.PNG" />
+    <None Include="Resources\PalmaAcima.PNG" />
+    <None Include="Resources\films.png" />
+    <None Include="Resources\Ultimo64.png" />
+    <None Include="Resources\Trash-can64.png" />
+    <None Include="Resources\Proximo64.png" />
+    <None Include="Resources\Primeiro64.png" />
+    <None Include="Resources\edit64.png" />
+    <None Include="Resources\cancel64.png" />
+    <None Include="Resources\Anterior64.png" />
+    <None Include="Resources\add164.png" />
+    <None Include="Resources\Accept64.png" />
+    <None Include="Resources\down32.png" />
+    <None Include="Resources\Stop32.png" />
+    <None Include="Resources\Pause32.png" />
+    <None Include="Resources\Skip-backward32.png" />
+    <None Include="Resources\Play32.png" />
+    <None Include="Resources\Relógio.png" />
+    <None Include="Resources\Estrela.png" />
+    <None Include="Resources\Pirâmide.png" />
+    <None Include="Resources\forward32.png" />
+    <None Include="Resources\Folha.png" />
+    <None Include="Resources\desenho48.png" />
+    <None Include="Resources\desenho.png" />
+    <None Include="Resources\Casa.png" />
+    <None Include="Resources\tabelaFundo.png" />
+    <None Include="Resources\Chapéu 4.png" />
+    <None Include="Resources\Chapéu 3.png" />
+    <None Include="Resources\Chapéu 2.png" />
+    <None Include="Resources\Chapéu 1.png" />
+    <None Include="Resources\FundoTela.png" />
+    <None Include="Resources\Logout1.png" />
+    <None Include="Resources\Idosos.png" />
+    <None Include="Resources\checklist1.png" />
+    <None Include="Resources\users1.png" />
+    <None Include="Resources\Logout.png" />
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.108.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net46\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.108.0\build\net46\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
